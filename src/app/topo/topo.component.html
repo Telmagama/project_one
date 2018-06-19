@@ -1,0 +1,472 @@
+
+<div class="fixed-top">
+  <nav class="navbar navbar-light bg-faded">
+    <div class="container">
+      <!--<a [routerLink]="['']" class="navbar-brand">
+        <img src="/assets/logo.png" />
+      </a>-->
+      <!--<a [routerLink]="['']">
+        <img src="/assets/carrinho.png" />
+      </a>-->
+    </div>
+    <div class="header">
+      <div class="container">
+  <div class="header-content">
+
+      <input value="sao-paulo-so" id="page_id" type="hidden">
+
+      
+      <span class="phone-menu visible-phone">
+
+          <div class="menu-type">
+              <button class="btn secondary navigation-menu" type="button" aria-label="Menu Principal">
+                  <i class="icon-reorder"></i>
+              </button>
+
+              <button class="btn secondary cart-mobile" type="button" aria-label="Carrinho">
+                  <i class="icon-cart"></i>
+                  <span class="qty"></span>
+              </button>
+
+              <button onclick="PU.responsive.share.init();" class="btn secondary share-deal" type="button" aria-label="Compartilhar">
+                  <i class="icon-share"></i>
+              </button>
+
+              <button class="btn secondary navigation-search" type="button" aria-label="Busca">
+                  <i class="icon-search"></i>
+              </button>
+
+              <div class="selector-mobile">
+                  <p class="selected-page"></p>
+              </div>
+          </div>
+
+          <div style="display: none" class="menu-brand">
+              <button class="btn secondary navigation-menu" type="button" aria-label="Menu Principal">
+                  <i class="icon-reorder"></i>
+              </button>
+              <div class="logo-responsivo" aria-label="Carrinho"></div>
+              <button class="btn secondary cart-mobile" type="button">
+                  <i class="icon-cart"></i>
+                  <span class="qty"></span>
+              </button>
+              <button class="btn secondary navigation-search active" type="button" aria-label="Busca">
+                  <i class="icon-search"></i>
+              </button>
+
+          </div>
+      </span>
+      
+
+      <span class="logo-container">
+        <a [routerLink]="['']" class="navbar-brand">
+          <img src="/assets/logo.png" />
+        </a>
+      </span>
+
+      <div class="header-search-box">
+          <div>
+
+              <div class="explore-box">
+                  <div class="search-box" itemscope="" itemtype="http://schema.org/WebSite">
+  <meta content="https://www.peixeurbano.com.br" itemprop="url" class="meta-search-url">
+  <form action="/sao-paulo-so/busca" itemtype="http://schema.org/SearchAction" itemscope="" itemprop="potentialAction" class="searchForm search-box-top" id="searchForm">
+      <meta content="/sao-paulo-so/busca?q={q}" itemprop="target" class="meta-search-target">
+      <div class="search-suggest">
+          <input placeholder="Buscar ofertas, bairros, etc." aria-label="Campo de busca" type="text" name="q" class="db-input typeahead q-suggest" itemprop="query-input" data-trck-on="search" value="">
+      </div>
+      <button style="display: none;" type="submit">buscar</button>
+  </form>
+</div>
+
+                  <div class="cities-box">
+                      <div class="pu-selector white cities-selector">
+                          <div class="current-selected cities-link">
+                              <span class="current-selected-name">São Paulo - Sul e Oeste</span>
+                          </div>
+
+                          <div class="other-options" data-trck-action="city-selector">
+                              <div class="other-options-filter">
+                                  <form autocomplete="off">
+                                      <input spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" type="text" placeholder="encontre sua cidade" class="cities-filter-input">
+                                  </form>
+                                  <i class="icon-search"></i>
+                              </div>
+                              <div class="other-options-list">
+                                  <div class="splitter-option popular-list-splitter">Cidades populares</div>
+                                  <ul class="popular-list">
+                                      <li class="popular-city">
+                                          <a href="/belo-horizonte" rel="nofollow" data-trck-on="page" class="pu-option city-link">Belo Horizonte</a>
+                                      </li><li class="popular-city">
+                                          <a href="/brasilia" rel="nofollow" data-trck-on="page" class="pu-option city-link">Brasília</a>
+                                      </li><li class="popular-city">
+                                          <a href="/campinas" rel="nofollow" data-trck-on="page" class="pu-option city-link">Campinas</a>
+                                      </li><li class="popular-city">
+                                          <a href="/curitiba" rel="nofollow" data-trck-on="page" class="pu-option city-link">Curitiba</a>
+                                      </li><li class="popular-city">
+                                          <a href="/florianopolis" rel="nofollow" data-trck-on="page" class="pu-option city-link">Florianópolis</a>
+                                      </li><li class="popular-city">
+                                          <a href="/fortaleza" rel="nofollow" data-trck-on="page" class="pu-option city-link">Fortaleza</a>
+                                      </li><li class="popular-city">
+                                          <a href="/goiania" rel="nofollow" data-trck-on="page" class="pu-option city-link">Goiânia</a>
+                                      </li><li class="popular-city">
+                                          <a href="/porto-alegre" rel="nofollow" data-trck-on="page" class="pu-option city-link">Porto Alegre</a>
+                                      </li><li class="popular-city">
+                                          <a href="/recife" rel="nofollow" data-trck-on="page" class="pu-option city-link">Recife</a>
+                                      </li><li class="popular-city">
+                                          <a href="/rio-de-janeiro" rel="nofollow" data-trck-on="page" class="pu-option city-link">Rio de Janeiro</a>
+                                      </li><li class="popular-city">
+                                          <a href="/salvador" rel="nofollow" data-trck-on="page" class="pu-option city-link">Salvador</a>
+                                      </li><li class="popular-city">
+                                          <a href="/sao-paulo" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Paulo</a>
+                                      </li><li class="popular-city">
+                                          <a href="/sao-paulo-grande-abc" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Paulo - Grande ABC</a>
+                                      </li><li class="popular-city">
+                                          <a href="/sao-paulo-nl" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Paulo - Norte e Leste</a>
+                                      </li><li class="popular-city">
+                                          <a href="/sao-paulo-so" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Paulo - Sul e Oeste</a>
+                                      </li><li class="popular-city">
+                                          <a href="/vitoria" rel="nofollow" data-trck-on="page" class="pu-option city-link">Vitória</a>
+                                      </li>
+                                  </ul>
+                                  <div class="splitter-option other-list-splitter">Todas as cidades</div>
+                                  <ul class="other-list">
+                                      <li class="other-city">
+                                          <a href="/alto-tiete" rel="nofollow" data-trck-on="page" class="pu-option city-link">Alto Tietê / Mogi</a>
+                                      </li><li class="other-city">
+                                          <a href="/americana" rel="nofollow" data-trck-on="page" class="pu-option city-link">Americana / Santa Bárbara</a>
+                                      </li><li class="other-city">
+                                          <a href="/anapolis" rel="nofollow" data-trck-on="page" class="pu-option city-link">Anápolis</a>
+                                      </li><li class="other-city">
+                                          <a href="/aracaju" rel="nofollow" data-trck-on="page" class="pu-option city-link">Aracaju</a>
+                                      </li><li class="other-city">
+                                          <a href="/aracatuba" rel="nofollow" data-trck-on="page" class="pu-option city-link">Araçatuba</a>
+                                      </li><li class="other-city">
+                                          <a href="/araraquara-sao-carlos" rel="nofollow" data-trck-on="page" class="pu-option city-link">Araraquara / São Carlos</a>
+                                      </li><li class="other-city">
+                                          <a href="/baixada-fluminense" rel="nofollow" data-trck-on="page" class="pu-option city-link">Baixada Fluminense</a>
+                                      </li><li class="other-city">
+                                          <a href="/balneario-camboriu" rel="nofollow" data-trck-on="page" class="pu-option city-link">Baln. Camboriú / Itajaí / Itapema</a>
+                                      </li><li class="other-city">
+                                          <a href="/barueri" rel="nofollow" data-trck-on="page" class="pu-option city-link">Barueri</a>
+                                      </li><li class="other-city">
+                                          <a href="/bauru" rel="nofollow" data-trck-on="page" class="pu-option city-link">Bauru</a>
+                                      </li><li class="other-city">
+                                          <a href="/belem" rel="nofollow" data-trck-on="page" class="pu-option city-link">Belém</a>
+                                      </li><li class="other-city">
+                                          <a href="/betim-contagem" rel="nofollow" data-trck-on="page" class="pu-option city-link">Betim / Contagem</a>
+                                      </li><li class="other-city">
+                                          <a href="/blumenau" rel="nofollow" data-trck-on="page" class="pu-option city-link">Blumenau</a>
+                                      </li><li class="other-city">
+                                          <a href="/buzios" rel="nofollow" data-trck-on="page" class="pu-option city-link">Búzios / Cabo Frio</a>
+                                      </li><li class="other-city">
+                                          <a href="/campinagrande" rel="nofollow" data-trck-on="page" class="pu-option city-link">Campina Grande</a>
+                                      </li><li class="other-city">
+                                          <a href="/campo-grande" rel="nofollow" data-trck-on="page" class="pu-option city-link">Campo Grande</a>
+                                      </li><li class="other-city">
+                                          <a href="/campos-do-jordao" rel="nofollow" data-trck-on="page" class="pu-option city-link">Campos do Jordão</a>
+                                      </li><li class="other-city">
+                                          <a href="/campos-dos-goytacazes" rel="nofollow" data-trck-on="page" class="pu-option city-link">Campos dos Goytacazes</a>
+                                      </li><li class="other-city">
+                                          <a href="/caruaru" rel="nofollow" data-trck-on="page" class="pu-option city-link">Caruaru</a>
+                                      </li><li class="other-city">
+                                          <a href="/cascavel" rel="nofollow" data-trck-on="page" class="pu-option city-link">Cascavel</a>
+                                      </li><li class="other-city">
+                                          <a href="/caxias-do-sul" rel="nofollow" data-trck-on="page" class="pu-option city-link">Caxias do Sul</a>
+                                      </li><li class="other-city">
+                                          <a href="/chapeco" rel="nofollow" data-trck-on="page" class="pu-option city-link">Chapecó</a>
+                                      </li><li class="other-city">
+                                          <a href="/criciuma" rel="nofollow" data-trck-on="page" class="pu-option city-link">Criciúma / Tubarão</a>
+                                      </li><li class="other-city">
+                                          <a href="/cuiaba" rel="nofollow" data-trck-on="page" class="pu-option city-link">Cuiabá</a>
+                                      </li><li class="other-city">
+                                          <a href="/dourados" rel="nofollow" data-trck-on="page" class="pu-option city-link">Dourados</a>
+                                      </li><li class="other-city">
+                                          <a href="/duque-de-caxias" rel="nofollow" data-trck-on="page" class="pu-option city-link">Duque de Caxias</a>
+                                      </li><li class="other-city">
+                                          <a href="/feiradesantana" rel="nofollow" data-trck-on="page" class="pu-option city-link">Feira de Santana</a>
+                                      </li><li class="other-city">
+                                          <a href="/fozdoiguacu" rel="nofollow" data-trck-on="page" class="pu-option city-link">Foz do Iguaçu</a>
+                                      </li><li class="other-city">
+                                          <a href="/franca" rel="nofollow" data-trck-on="page" class="pu-option city-link">Franca</a>
+                                      </li><li class="other-city">
+                                          <a href="/gramado-canela" rel="nofollow" data-trck-on="page" class="pu-option city-link">Gramado / Canela</a>
+                                      </li><li class="other-city">
+                                          <a href="/guarapuava" rel="nofollow" data-trck-on="page" class="pu-option city-link">Guarapuava</a>
+                                      </li><li class="other-city">
+                                          <a href="/guaruja" rel="nofollow" data-trck-on="page" class="pu-option city-link">Guarujá</a>
+                                      </li><li class="other-city">
+                                          <a href="/guarulhos" rel="nofollow" data-trck-on="page" class="pu-option city-link">Guarulhos</a>
+                                      </li><li class="other-city">
+                                          <a href="/jaboatao" rel="nofollow" data-trck-on="page" class="pu-option city-link">Jaboatão</a>
+                                      </li><li class="other-city">
+                                          <a href="/joao-pessoa" rel="nofollow" data-trck-on="page" class="pu-option city-link">João Pessoa</a>
+                                      </li><li class="other-city">
+                                          <a href="/joinville" rel="nofollow" data-trck-on="page" class="pu-option city-link">Joinville</a>
+                                      </li><li class="other-city">
+                                          <a href="/juiz-de-fora" rel="nofollow" data-trck-on="page" class="pu-option city-link">Juiz de Fora</a>
+                                      </li><li class="other-city">
+                                          <a href="/jundiai" rel="nofollow" data-trck-on="page" class="pu-option city-link">Jundiaí</a>
+                                      </li><li class="other-city">
+                                          <a href="/limeira" rel="nofollow" data-trck-on="page" class="pu-option city-link">Limeira</a>
+                                      </li><li class="other-city">
+                                          <a href="/londrina" rel="nofollow" data-trck-on="page" class="pu-option city-link">Londrina</a>
+                                      </li><li class="other-city">
+                                          <a href="/macae" rel="nofollow" data-trck-on="page" class="pu-option city-link">Macaé / Rio das Ostras</a>
+                                      </li><li class="other-city">
+                                          <a href="/maceio" rel="nofollow" data-trck-on="page" class="pu-option city-link">Maceió</a>
+                                      </li><li class="other-city">
+                                          <a href="/manaus" rel="nofollow" data-trck-on="page" class="pu-option city-link">Manaus</a>
+                                      </li><li class="other-city">
+                                          <a href="/marilia" rel="nofollow" data-trck-on="page" class="pu-option city-link">Marília</a>
+                                      </li><li class="other-city">
+                                          <a href="/maringa" rel="nofollow" data-trck-on="page" class="pu-option city-link">Maringá</a>
+                                      </li><li class="other-city">
+                                          <a href="/maua" rel="nofollow" data-trck-on="page" class="pu-option city-link">Mauá</a>
+                                      </li><li class="other-city">
+                                          <a href="/mossoro" rel="nofollow" data-trck-on="page" class="pu-option city-link">Mossoró</a>
+                                      </li><li class="other-city">
+                                          <a href="/natal" rel="nofollow" data-trck-on="page" class="pu-option city-link">Natal</a>
+                                      </li><li class="other-city">
+                                          <a href="/nilopolis" rel="nofollow" data-trck-on="page" class="pu-option city-link">Nilópolis</a>
+                                      </li><li class="other-city">
+                                          <a href="/niteroi" rel="nofollow" data-trck-on="page" class="pu-option city-link">Niterói</a>
+                                      </li><li class="other-city">
+                                          <a href="/nova-iguacu" rel="nofollow" data-trck-on="page" class="pu-option city-link">Nova Iguaçu</a>
+                                      </li><li class="other-city">
+                                          <a href="/osasco" rel="nofollow" data-trck-on="page" class="pu-option city-link">Osasco</a>
+                                      </li><li class="other-city">
+                                          <a href="/palmas" rel="nofollow" data-trck-on="page" class="pu-option city-link">Palmas</a>
+                                      </li><li class="other-city">
+                                          <a href="/passo-fundo" rel="nofollow" data-trck-on="page" class="pu-option city-link">Passo Fundo</a>
+                                      </li><li class="other-city">
+                                          <a href="/pelotas" rel="nofollow" data-trck-on="page" class="pu-option city-link">Pelotas / Rio Grande</a>
+                                      </li><li class="other-city">
+                                          <a href="/petrolina-juazeiro" rel="nofollow" data-trck-on="page" class="pu-option city-link">Petrolina / Juazeiro</a>
+                                      </li><li class="other-city">
+                                          <a href="/piracicaba" rel="nofollow" data-trck-on="page" class="pu-option city-link">Piracicaba</a>
+                                      </li><li class="other-city">
+                                          <a href="/ponta-grossa" rel="nofollow" data-trck-on="page" class="pu-option city-link">Ponta Grossa</a>
+                                      </li><li class="other-city">
+                                          <a href="/porto-velho" rel="nofollow" data-trck-on="page" class="pu-option city-link">Porto Velho</a>
+                                      </li><li class="other-city">
+                                          <a href="/praia-grande" rel="nofollow" data-trck-on="page" class="pu-option city-link">Praia Grande</a>
+                                      </li><li class="other-city">
+                                          <a href="/presidente-prudente" rel="nofollow" data-trck-on="page" class="pu-option city-link">Presidente Prudente</a>
+                                      </li><li class="other-city">
+                                          <a href="/produtos" rel="nofollow" data-trck-on="page" class="pu-option city-link">Produtos</a>
+                                      </li><li class="other-city">
+                                          <a href="/reg-serrana-rj" rel="nofollow" data-trck-on="page" class="pu-option city-link">Petrópolis / Teresópolis / Nova Friburgo</a>
+                                      </li><li class="other-city">
+                                          <a href="/resende" rel="nofollow" data-trck-on="page" class="pu-option city-link">Volta Redonda / Resende / Barra Mansa</a>
+                                      </li><li class="other-city">
+                                          <a href="/ribeirao-preto" rel="nofollow" data-trck-on="page" class="pu-option city-link">Ribeirão Preto</a>
+                                      </li><li class="other-city">
+                                          <a href="/rondonopolis" rel="nofollow" data-trck-on="page" class="pu-option city-link">Rondonópolis</a>
+                                      </li><li class="other-city">
+                                          <a href="/santa-cruz-do-sul" rel="nofollow" data-trck-on="page" class="pu-option city-link">Santa Cruz do Sul</a>
+                                      </li><li class="other-city">
+                                          <a href="/santa-maria" rel="nofollow" data-trck-on="page" class="pu-option city-link">Santa Maria</a>
+                                      </li><li class="other-city">
+                                          <a href="/santo-andre" rel="nofollow" data-trck-on="page" class="pu-option city-link">Santo André</a>
+                                      </li><li class="other-city">
+                                          <a href="/santos" rel="nofollow" data-trck-on="page" class="pu-option city-link">Baixada Santista</a>
+                                      </li><li class="other-city">
+                                          <a href="/santos-sp" rel="nofollow" data-trck-on="page" class="pu-option city-link">Santos</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-bernardo-do-campo" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Bernardo do Campo</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-caetano-do-sul" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Caetano do Sul</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-goncalo" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Gonçalo</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-joao-de-meriti" rel="nofollow" data-trck-on="page" class="pu-option city-link">São João de Meriti</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-jose-dos-campos" rel="nofollow" data-trck-on="page" class="pu-option city-link">São José dos Campos / Jacareí</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-jose-dos-pinhais" rel="nofollow" data-trck-on="page" class="pu-option city-link">São José dos Pinhais</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-jose-rio-preto" rel="nofollow" data-trck-on="page" class="pu-option city-link">São José do Rio Preto</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-paulo-alphaville" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Paulo - Alphaville</a>
+                                      </li><li class="other-city">
+                                          <a href="/sao-vicente" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Vicente</a>
+                                      </li><li class="other-city">
+                                          <a href="/saoluis" rel="nofollow" data-trck-on="page" class="pu-option city-link">São Luís</a>
+                                      </li><li class="other-city">
+                                          <a href="/sinop" rel="nofollow" data-trck-on="page" class="pu-option city-link">Sinop</a>
+                                      </li><li class="other-city">
+                                          <a href="/sorocaba" rel="nofollow" data-trck-on="page" class="pu-option city-link">Sorocaba</a>
+                                      </li><li class="other-city">
+                                          <a href="/taubate" rel="nofollow" data-trck-on="page" class="pu-option city-link">Taubaté / Pinda / Guara</a>
+                                      </li><li class="other-city">
+                                          <a href="/teresina" rel="nofollow" data-trck-on="page" class="pu-option city-link">Teresina</a>
+                                      </li><li class="other-city">
+                                          <a href="/uberaba" rel="nofollow" data-trck-on="page" class="pu-option city-link">Uberaba</a>
+                                      </li><li class="other-city">
+                                          <a href="/uberlandia" rel="nofollow" data-trck-on="page" class="pu-option city-link">Uberlândia</a>
+                                      </li><li class="other-city">
+                                          <a href="/vale-dos-sinos" rel="nofollow" data-trck-on="page" class="pu-option city-link">Vale dos Sinos</a>
+                                      </li><li class="other-city">
+                                          <a href="/viagens" rel="nofollow" data-trck-on="page" class="pu-option city-link">Viagens</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <button form="searchForm" type="submit" class="search-submit btn primary "><i class="icon-search"></i></button>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="header-right">
+          <div class="header-right-container">
+
+          
+          <span class="top-dropdown" id="_usermenu">
+              <div class="user-menu">
+                  <div id="not_loggedin_user_menu" class="not-logado">
+  <div class="dados-user">
+      <span class="name-user-label">Login</span>
+      <div rel="nofollow" class="cta-user">
+          <div class="btn">Entrar</div>
+      </div>
+      <div class="account-menu">
+          <div class="arrow"></div>
+          <div class="content-menu">
+              <div>
+                  <button data-trck-on="fb-login" title="Entrar com sua conta do Facebook" data-page-element="header" id="fbLoginBtn" class="fbLoginBtn btn btn-fb" rel="nofollow"><span class="icon-facebook-squared"></span> Entrar com Facebook</button>
+                  <button data-trck-on="gc-login" title="Entrar com sua conta do Google" data-page-element="header" id="gcLoginBtn" class="gcLoginBtn btn btn-gc" rel="nofollow">
+                      <span class="ico-google">
+                          <svg version="1.1" viewBox="0 0 18 18" height="14px" width="18px">
+                              <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="Google-Button">
+                                  <g transform="translate(-15.000000, -15.000000)" id="btn_google_signin_light_normal_web">
+                                      <g transform="translate(15.000000, 15.000000)" id="logo_googleg_48dp">
+                                          <path fill="#4285F4" d="M17.64,9.20454545 C17.64,8.56636364 17.5827273,7.95272727 17.4763636,7.36363636 L9,7.36363636 L9,10.845 L13.8436364,10.845 C13.635,11.97 13.0009091,12.9231818 12.0477273,13.5613636 L12.0477273,15.8195455 L14.9563636,15.8195455 C16.6581818,14.2527273 17.64,11.9454545 17.64,9.20454545 L17.64,9.20454545 Z"></path>
+                                          <path fill="#34A853" d="M9,18 C11.43,18 13.4672727,17.1940909 14.9563636,15.8195455 L12.0477273,13.5613636 C11.2418182,14.1013636 10.2109091,14.4204545 9,14.4204545 C6.65590909,14.4204545 4.67181818,12.8372727 3.96409091,10.71 L0.957272727,10.71 L0.957272727,13.0418182 C2.43818182,15.9831818 5.48181818,18 9,18 L9,18 Z"></path>
+                                          <path fill="#FBBC05" d="M3.96409091,10.71 C3.78409091,10.17 3.68181818,9.59318182 3.68181818,9 C3.68181818,8.40681818 3.78409091,7.83 3.96409091,7.29 L3.96409091,4.95818182 L0.957272727,4.95818182 C0.347727273,6.17318182 0,7.54772727 0,9 C0,10.4522727 0.347727273,11.8268182 0.957272727,13.0418182 L3.96409091,10.71 L3.96409091,10.71 Z"></path>
+                                          <path fill="#EA4335" d="M9,3.57954545 C10.3213636,3.57954545 11.5077273,4.03363636 12.4404545,4.92545455 L15.0218182,2.34409091 C13.4631818,0.891818182 11.4259091,0 9,0 C5.48181818,0 2.43818182,2.01681818 0.957272727,4.95818182 L3.96409091,7.29 C4.67181818,5.16272727 6.65590909,3.57954545 9,3.57954545 L9,3.57954545 Z"></path>
+                                          <polygon points="0 0 18 0 18 18 0 18"></polygon>
+                                      </g>
+                                  </g>
+                              </g>
+                          </svg>
+                      </span> Entrar com Google
+                  </button>
+              </div>
+              <div>
+                  <a data-trck-on="cadastre-se" title="Cadastre-se" href="/cadastre-se" class="nav-signup" rel="nofollow">Cadastre-se</a>
+                  <a data-trck-on="login" title="Entrar com sua conta" class="nav-login" href="/login" rel="nofollow">Entrar</a>
+              </div>
+              <a href="https://ajuda.peixeurbano.com.br" rel="nofollow" title="Tire suas d&#x00fa;vidas" class="nav-help help-link" data-trck-on="ajuda">Ajuda</a>
+          </div>
+      </div>
+  </div>
+  <a class="top-signup" href="/cadastre-se">Criar uma conta</a>
+</div>
+              </div>
+          </span>
+
+          
+          <span id="_favorites"></span>
+
+          
+          <div class="cart-container top-dropdown">
+
+              <span id="cart_user" class="cart-user top-dropdown-cta" rel="nofollow">
+                  <a id="cart-user-link" title="" href="javascript:void(0)" rel="nofollow">
+                      <span class="deal_qty_cart hide"></span>
+                      <i class="icon-cart-empty"></i>
+                      <span class="deal_lbl_cart">Carrinho</span>
+                  </a>
+              </span>
+
+              <div class="data_cart top-dropdown-menu">
+                  <div class="dropdown-title">Carrinho</div>
+                  <i class="icon-close close-dropdown visible-phone"></i>
+                  <div class="arrow"></div>
+                  <div class="cart_menu">
+                      <div class="full-cart hide">
+                          <ul class="cart_menu_list">
+                              <li class="cart_deal">
+                                  <img src="" width="70">
+                                  <span class="small-title"></span>
+                                  <span class="option"></span>
+                                  <span class="qty"></span>
+                              </li>
+                          </ul>
+                          <a href="https://carrinho.peixeurbano.com.br/v2/comprando" rel="nofollow" class="btn primary view-more go_cart">ir para o carrinho</a>
+                      </div>
+                      <div class="empty-cart">
+                          <p class="empty-title">Seu carrinho está vazio</p>
+                          <span class="empty-description">Tá esperando o que pra aproveitar as nossas ofertas?</span>
+                          <a href="javascript:void(0)" class="btn outline primary choose-offer" rel="nofollow">escolher uma oferta agora</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+  </div>
+  </nav>
+<div class="header-bottom hidden-phone">
+        <div class="container">
+    <ul class="flyout-first nav-left">
+        <li class="type-local item-first  active">
+            <a href="/" title="" class="city-selector local-selector" id="header-link-local">Na cidade</a>
+            
+        </li>
+        <li class="type-travel item-first ">
+            <a href="/viagens" title="" class="city-selector" id="header-link-travel">Viagens</a>
+            
+        </li>
+        <li class="type-product item-first ">
+            <a href="/produtos" title="" class="city-selector" id="header-link-products">Produtos</a>
+            
+        </li>
+    </ul>
+    <ul class="nav-right"><li class="">
+      <a href="/viagens-sudeste" onclick="(function() { try {  } catch(e) { console.error(e); } })()" rel="">
+        Viagens Sudeste
+      </a>
+    </li><li class="">
+      <a href="/sao-paulo-so/?colecao=novas-ofertas" onclick="(function() { try {  } catch(e) { console.error(e); } })()" rel="">
+        Novidades
+      </a>
+    </li></ul>
+    <ul class="nav-fill"><li class="">
+       
+        <a href="/sao-paulo-so/restaurantes" onclick="(function() { try {  } catch(e) { console.error(e); } })()" rel="nofollow">
+        Restaurantes
+      </a>
+    </li><li class="">
+      <a href="/sao-paulo-so/diversao" onclick="(function() { try {  } catch(e) { console.error(e); } })()" rel="nofollow">
+        Diversão
+      </a>
+    </li><li class="">
+      <a href="/sao-paulo-so/celulares-e-smartphones-n" onclick="(function() { try {  } catch(e) { console.error(e); } })()" rel="nofollow">
+        Smartphones
+      </a>
+    </li><li class="">
+      <a href="/sao-paulo-so/beleza" onclick="(function() { try {  } catch(e) { console.error(e); } })()" rel="nofollow">
+        Beleza e Fitness
+      </a>
+    </li><li class="">
+      <a href="/sao-paulo-so/comercio-e-servicos-locais" onclick="(function() { try {  } catch(e) { console.error(e); } })()" rel="nofollow">
+        Serviços
+      </a>
+    </li></ul>
+</div>
+</div>
+
+                   
+                   
+                   
+                   
+
